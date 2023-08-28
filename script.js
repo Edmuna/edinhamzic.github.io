@@ -3,6 +3,7 @@ const xIcon = document.querySelector(".navbar__x")
 const hamburgerIcon = document.querySelector(".hamburger__navbar")
 const firstPageContainer = document.querySelector(".container")
 
+
 const secondSection = document.querySelector(".second__section")
 
 const form = document.getElementById("form")
@@ -14,7 +15,6 @@ hamburgerIcon.addEventListener("click", () => {
     navbarUL.classList.toggle("ul__inactive")
     xIcon.classList.toggle("not__active")
     hamburgerIcon.classList.toggle("not__active")
-    firstPageContainer.classList.toggle("not__active")
     secondSection.classList.toggle("not__active")
 })
 
@@ -23,7 +23,6 @@ xIcon.addEventListener("click", () => {
     navbarUL.classList.toggle("ul__inactive")
     xIcon.classList.toggle("not__active")
     hamburgerIcon.classList.toggle("not__active")
-    firstPageContainer.classList.toggle("not__active")
     secondSection.classList.toggle("not__active")
 })
 
@@ -49,4 +48,25 @@ form.addEventListener('submit', function (event) {
             console.log('FAILED...', error);
         });
 });
+
+function smoothScroll(target) {
+    const targetElement = document.querySelector(target);
+    if (targetElement) {
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth',
+        });
+    }
+}
+
+const navLinks = document.querySelectorAll('.navbar__links');
+navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href');
+        smoothScroll(targetId);
+    });
+});
+
+
 

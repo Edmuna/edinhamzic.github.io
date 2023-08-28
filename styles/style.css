@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Source+Code+Pro:wght@300;400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Code+Pro&display=swap');
 
 :root {
     --primary-color: #007BFF;
@@ -14,15 +13,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lilita One, monospace";
+    /* font-family: "Playfair Display", serif; */
 }
 
 body {
     background: radial-gradient(ellipse at center, rgba(255, 254, 234, 1) 0%, rgba(255, 254, 234, 1) 35%, var(--background-color) 100%);
     overflow-x: hidden;
 }
-
-
 
 .social__links {
     height: 50px;
@@ -70,10 +67,10 @@ ul {
 
 .navbar__links {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--secondary-color);
     letter-spacing: .3rem;
     font-family: "Source Code Pro", monospace;
-    font-weight: 500;
+    font-weight: 400;
     position: relative;
 }
 
@@ -89,7 +86,7 @@ ul {
 }
 
 .navbar__links:hover::after {
-    width: 100%;
+    width: 95%;
 }
 
 .navbar__hamburger {
@@ -202,7 +199,8 @@ ul {
 
 ------------------------------------------------------------------------------------------------------- .projects__header,
 .contact__header,
-.about__header {
+.about__header,
+.projects__header {
     text-align: center;
     margin-block: 1rem;
     color: #0b3471;
@@ -278,7 +276,7 @@ ul {
 /* -------------- */
 
 .contact-form {
-    max-width: 500px;
+    width: 720px;
     margin: 0 auto;
     padding: 20px;
     /* border: 1px solid #ccc; */
@@ -311,12 +309,14 @@ textarea {
 }
 
 button {
-    background-color: #007BFF;
+    background-color: var(--primary-color);
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: "Source Code pro", monospace;
+    font-weight: bold;
 }
 
 button:hover {
@@ -333,13 +333,12 @@ button:hover {
 /* ------------------------------------------------------------- */
 
 .about-section {
-    max-width: 600px;
+    width: 720px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-    /* background-color: var(--background-color); */
 }
 
 h2 {
@@ -358,6 +357,7 @@ p {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    font-family: "Source Code Pro", monospace;
     background-color: var(--primary-color);
     color: white;
 }
@@ -377,4 +377,10 @@ p {
 .projects,
 .about {
     margin-bottom: 3rem;
+}
+
+/* ------------------------------------------------------------------------- */
+
+footer {
+    text-align: center;
 }
