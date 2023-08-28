@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("1iqi5gSawssZ1Xp36");
+      })();
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+      <nav class="navbar">
+        <div class="social__links">
+          <a href="https://github.com/Edmuna" target="_blank">
+            <img
+              class="social__links__github"
+              src="./assets/github-svgrepo-com.svg"
+              alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/edin-hamzi%C4%87-655591235/"
+            target="_blank"
+          >
+            <img
+              class="social__links__linkedin"
+              src="./assets/linkedin-svgrepo-com.svg"
+              alt=""
+            />
+          </a>
+        </div>
+        <ul class="navbar__ul ul__inactive">
+          <li><a class="navbar__links" href="#">HOME</a></li>
+          <li><a class="navbar__links" href="#">ABOUT</a></li>
+          <li><a class="navbar__links" href="#">PROJECTS</a></li>
+          <li><a class="navbar__links" href="#">CONTACT</a></li>
+        </ul>
+        <div class="navbar__x not__active">
+          <img class="navbar__x__img" src="./assets/icons8-x-100.svg" alt="" />
+        </div>
+        <div class="hamburger__navbar">
+          <img
+            class="navbar__hamburger"
+            src="./assets/hamburger-menu-svgrepo-com.svg"
+            alt=""
+          />
+        </div>
+      </nav>
+      <div class="container">
+        <div class="container__one">
+          <div class="container__one__headings">
+            <h1>EDIN HAMZIC</h1>
+            <h3>WEB DEVELOPER</h3>
+          </div>
+          <div class="container__location">
+            <img
+              class="svg"
+              src="./assets/location-marker-svgrepo-com.svg"
+              alt=""
+            />
+            Graz, Austria
+          </div>
+          <div class="container__one__stack">
+            <div>
+              <img
+                class="svg"
+                src="./assets/html-5-svgrepo-com (1).svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img class="svg" src="./assets/css-3-svgrepo-com.svg" alt="" />
+            </div>
+            <div>
+              <img
+                class="svg"
+                src="./assets/js-official-svgrepo-com.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img class="svg" src="./assets/react-svgrepo-com.svg" alt="" />
+            </div>
+            <div>
+              <img class="svg" src="./assets/git-svgrepo-com.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="container__two">
+          <img
+            src="./assets/no_bg_7a9e7567-ba40-490b-a49e-09fdd6f2cebd.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <img
+        class="down__arrow"
+        src="./assets/down-arrow-backup-2-svgrepo-com.svg"
+        alt=""
+      />
+    </section>
+
+    <!-- ------------------------------------------------------------------------------------ -->
+
+    <section class="about">
+      <header class="about__header"><h2>ABOUT</h2></header>
+      <div class="about-section">
+        <p>
+          Hello! I'm Edin Hamzic, a passionate web developer with a keen
+          interest in creating user-friendly and visually appealing websites. I
+          have experience in HTML, CSS, JavaScript, and more. I love to learn
+          and stay up-to-date with the latest web technologies to deliver modern
+          and efficient solutions.
+        </p>
+        <p>
+          In my free time, I enjoy experimenting with new coding techniques and
+          contributing to open-source projects. Feel free to explore my
+          portfolio to see some of my recent projects.
+        </p>
+        <p>
+          If you're interested in working with me, you can download my CV below:
+        </p>
+        <a class="about__link" href="/assets/CV - Edin Hamzić.pdf" download
+          >Download CV</a
+        >
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------- -->
+
+    <section class="projects">
+      <header class="projects__header"><h1>PROJECTS</h1></header>
+      <div class="flex__container">
+        <div class="first__container">
+          <div class="flex__item__one"></div>
+          <div class="flex__item__two"></div>
+        </div>
+        <div class="second__container">
+          <div class="flex__item__three"></div>
+          <div class="flex__item__four"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <header class="contact__header"><h1>CONTACT</h1></header>
+      <div class="contact-form">
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/83677a6a4d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
