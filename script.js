@@ -49,6 +49,53 @@ form.addEventListener('submit', function (event) {
         });
 });
 
+// function smoothScroll(target) {
+//     const targetElement = document.querySelector(target);
+//     if (targetElement) {
+//         window.scrollTo({
+//             top: targetElement.offsetTop,
+//             behavior: 'smooth',
+//         });
+//     }
+// }
+
+// const navLinks = document.querySelectorAll('.navbar__links');
+// navLinks.forEach(link => {
+//     link.addEventListener('click', (event) => {
+//         event.preventDefault();
+//         const targetId = link.getAttribute('href');
+//         smoothScroll(targetId);
+//     });
+// });
+
+
+
+// navLinks.forEach(link => {
+//     link.addEventListener('click', function (event) {
+//         event.preventDefault();
+
+//         const targetId = link.getAttribute('href');
+//         const targetElement = document.querySelector(targetId);
+
+//         if (targetElement) {
+//             window.scrollTo({
+//                 top: targetElement.offsetTop,
+//                 behavior: 'smooth'
+//             });
+
+//             // Close the navbar
+//             navbarUL.classList.toggle('ul__inactive');
+//             xIcon.classList.toggle('not__active');
+//             hamburgerIcon.classList.toggle('not__active');
+//             secondSection.classList.toggle('not__active');
+
+//             // Remove the not__active class from the X icon
+//             xIcon.classList.toggle('not__active');
+//         }
+//     });
+// });
+
+
 function smoothScroll(target) {
     const targetElement = document.querySelector(target);
     if (targetElement) {
@@ -60,13 +107,18 @@ function smoothScroll(target) {
 }
 
 const navLinks = document.querySelectorAll('.navbar__links');
+
 navLinks.forEach(link => {
-    link.addEventListener('click', (event) => {
+    link.addEventListener('click', function (event) {
         event.preventDefault();
+
         const targetId = link.getAttribute('href');
         smoothScroll(targetId);
+
+        // Toggle the navbar and X icon
+        navbarUL.classList.toggle('ul__inactive');
+        xIcon.classList.toggle('not__active');
+        hamburgerIcon.classList.toggle('not__active');
+        secondSection.classList.toggle('not__active');
     });
 });
-
-
-

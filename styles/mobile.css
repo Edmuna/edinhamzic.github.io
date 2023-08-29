@@ -138,6 +138,7 @@
         z-index: 1;
         visibility: visible;
         pointer-events: all;
+        color: #0B3471;
     }
 
     .navbar__x {
@@ -149,6 +150,8 @@
         pointer-events: all;
         height: 50px;
         width: 50px;
+        color: #0B3471;
+
     }
 
     .navbar__inactive {
