@@ -233,9 +233,7 @@ ul {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-
 }
-
 
 .flex__item__one {
     height: 350px;
@@ -243,7 +241,7 @@ ul {
     border-radius: .5rem;
     background: url(/assets/Calculator.png) no-repeat center center/cover;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-
+    position: relative;
 }
 
 .flex__item__two {
@@ -252,7 +250,7 @@ ul {
     border-radius: .5rem;
     background: url(/assets/Netfix.png) no-repeat center center/cover;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-
+    position: relative;
 }
 
 .flex__item__three {
@@ -261,16 +259,70 @@ ul {
     border-radius: .5rem;
     background: url(/assets/FetchAPI.png) no-repeat center center/cover;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-
+    position: relative;
 }
 
 .flex__item__four {
+    position: relative;
     height: 350px;
     width: 350px;
     border-radius: .5rem;
     background: url(/assets/Todo.png) no-repeat center center/cover;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 
+}
+
+.flex__item__link__one {
+    position: absolute;
+    top: 50%;
+    /* Adjust this value as needed */
+    left: 30%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Source Code pro", monospace;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.flex__item__link__two {
+    position: absolute;
+    top: 50%;
+    /* Adjust this value as needed */
+    left: 70%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Source Code pro", monospace;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.flex__item__one:hover .flex__item__link__one,
+.flex__item__two:hover .flex__item__link__one,
+.flex__item__three:hover .flex__item__link__one,
+.flex__item__four:hover .flex__item__link__one {
+    opacity: 1;
+}
+
+.flex__item__one:hover .flex__item__link__two,
+.flex__item__two:hover .flex__item__link__two,
+.flex__item__three:hover .flex__item__link__two,
+.flex__item__four:hover .flex__item__link__two {
+    opacity: 1;
 }
 
 /* -------------- */
